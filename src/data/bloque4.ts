@@ -1,0 +1,328 @@
+import { Question } from '../types';
+
+export const BLOQUE_4_QUESTIONS: Question[] = [
+  {
+    id: 'b4-q01',
+    block: 4,
+    topic: 'Clases de Personal y Funciones Reservadas',
+    question: 'Según el artículo 9.2 del Texto Refundido del Estatuto Básico del Empleado Público (RDL 5/2015, TREBEP), corresponde exclusivamente a los funcionarios públicos:',
+    options: [
+      'El ejercicio de las funciones que impliquen la participación directa o indirecta en el ejercicio de las potestades públicas o en la salvaguardia de los intereses generales del Estado y de las Administraciones Públicas.',
+      'La realización de cualquier tarea de apoyo administrativo, mantenimiento o vigilancia en edificios públicos.',
+      'Exclusivamente la firma de resoluciones sancionadoras y actos de gravamen.',
+      'Todas las funciones técnicas de informática y asesoramiento jurídico sin excepción.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 9.2 RDL 5/2015 (TREBEP)',
+    explanation: 'El art. 9.2 TREBEP reserva exclusivamente a los funcionarios públicos el ejercicio de funciones que impliquen participación directa o indirecta en el ejercicio de potestades públicas o salvaguardia de intereses generales.',
+    difficulty: 'base',
+    isTrapWord: true,
+    trapWord: 'exclusivamente',
+  },
+  {
+    id: 'b4-q02',
+    block: 4,
+    topic: 'Funcionarios Interinos — Causas y Duración',
+    question: 'De acuerdo con el artículo 10.1.a) y 10.4 del TREBEP (modificado por la Ley 20/2021), cuando se nombre a un funcionario interino por existencia de plazas vacantes cuando no sea posible su cobertura por funcionarios de carrera, su nombramiento será por un máximo de:',
+    options: [
+      'Dos años.',
+      'Tres años.',
+      'Un año prorrogable por seis meses.',
+      'Cinco años.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 10.1.a) y 10.4 RDL 5/2015 (TREBEP)',
+    explanation: 'Por vacante (art. 10.1.a), el plazo máximo es de 3 años. Transcurridos 3 años desde el nombramiento, se producirá el fin de la relación de interinidad y la vacante solo podrá ser ocupada por funcionario de carrera, salvo que el proceso selectivo quede desierto. En ejecución de programas temporales (art. 10.1.c), el máximo es 3 años ampliable hasta 12 meses más.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b4-q03',
+    block: 4,
+    topic: 'Grupos de Clasificación Profesional',
+    question: 'Para el acceso al Cuerpo General Administrativo de la Administración del Estado (Subgrupo C1), el artículo 76 del TREBEP exige estar en posesión del título de:',
+    options: [
+      'Graduado en Educación Secundaria Obligatoria.',
+      'Bachiller o Técnico.',
+      'Título universitario de Grado.',
+      'Técnico Superior de Formación Profesional.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 76 RDL 5/2015 (TREBEP)',
+    explanation: 'El Grupo C se divide en dos subgrupos: C1 (título de Bachiller o Técnico) y C2 (título de Graduado en Educación Secundaria Obligatoria). El Grupo B exige título de Técnico Superior.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q04',
+    block: 4,
+    topic: 'Oferta de Empleo Público',
+    question: 'Según el artículo 70.1 del TREBEP, la ejecución de la oferta de empleo público o instrumento similar deberá desarrollarse dentro del plazo improrrogable de:',
+    options: [
+      'Dos años.',
+      'Tres años.',
+      'Un año desde su publicación en el BOE.',
+      'Cinco años.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 70.1 RDL 5/2015 (TREBEP)',
+    explanation: 'El art. 70.1 TREBEP fija un plazo improrrogable de tres años para la ejecución de la Oferta de Empleo Público. Además, el cupo mínimo de reserva para personas con discapacidad es del 7 % (al menos 2 % para discapacidad intelectual).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q05',
+    block: 4,
+    topic: 'Promoción Interna Vertical',
+    question: 'Conforme al artículo 18.2 del TREBEP, para participar en los procesos de promoción interna, los funcionarios deberán poseer los requisitos exigidos para el ingreso, tener una antigüedad de, al menos, ___ de servicio activo en el inferior Subgrupo o Grupo de clasificación profesional, y superar las correspondientes pruebas selectivas:',
+    options: [
+      'Un año.',
+      'Dos años.',
+      'Tres años.',
+      'Cinco años.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 18.2 RDL 5/2015 (TREBEP)',
+    explanation: 'El art. 18.2 TREBEP exige una antigüedad de al menos DOS AÑOS de servicio activo en el inferior Subgrupo o Grupo de clasificación profesional.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q06',
+    block: 4,
+    topic: 'Pérdida de la Condición de Funcionario',
+    question: 'Según el artículo 63 del TREBEP, ¿cuál de las siguientes NO es una causa de pérdida de la condición de funcionario de carrera?',
+    options: [
+      'La renuncia a la condición de funcionario.',
+      'La sanción disciplinaria de separación del servicio que tuviere carácter firme.',
+      'La declaración en situación administrativa de excedencia voluntaria por interés particular.',
+      'La pérdida de la nacionalidad española (o de Estado miembro UE, salvo recobro simultáneo de otra que habilite).'
+    ],
+    correctIndex: 2,
+    articleRef: 'Art. 63 y Art. 89 RDL 5/2015 (TREBEP)',
+    explanation: 'La excedencia voluntaria por interés particular es una situación administrativa, NO produce la pérdida de la condición de funcionario. Las causas del art. 63 son: renuncia, pérdida de nacionalidad, jubilación total, sanción firme de separación del servicio y pena principal/accesoria de inhabilitación absoluta o especial firme.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q07',
+    block: 4,
+    topic: 'Provisión de Puestos — Concurso y Libre Designación',
+    question: 'De acuerdo con el artículo 80 del TREBEP, en el procedimiento de libre designación con convocatoria pública:',
+    options: [
+      'Los titulares de los puestos provistos por libre designación no pueden ser cesados discrecionalmente sin expediente disciplinario.',
+      'Los titulares de los puestos de trabajo provistos por el procedimiento de libre designación con convocatoria pública podrán ser cesados discrecionalmente.',
+      'La valoración de méritos es exclusivamente reglada mediante baremo numérico publicado en el BOE.',
+      'Se aplica como procedimiento normal de provisión para todos los puestos de nivel 15 a 22.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 80.4 RDL 5/2015 (TREBEP)',
+    explanation: 'El procedimiento normal de provisión es el concurso (art. 79). En la libre designación (art. 80), apreciación discrecional de idoneidad y los titulares pueden ser cesados discrecionalmente (debiendo asignárseles un puesto de trabajo conforme al sistema de carrera).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q08',
+    block: 4,
+    topic: 'Situaciones Administrativas — Servicios Especiales',
+    question: 'Un funcionario de carrera del Subgrupo C1 es nombrado Subsecretario o elegido Diputado de las Cortes Generales. Conforme al artículo 87 del TREBEP, pasará a la situación de:',
+    options: [
+      'Excedencia forzosa.',
+      'Servicios especiales, con derecho al cómputo del tiempo a efectos de ascensos, trienios, promoción interna y derechos en el régimen de Seguridad Social.',
+      'Servicio en otras Administraciones Públicas.',
+      'Excedencia voluntaria por prestación de servicios en el sector público.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 87.1 y 87.2 RDL 5/2015 (TREBEP)',
+    explanation: 'Quienes sean designados miembros del Gobierno, altos cargos (Subsecretario), Diputados/Senadores, miembros del TC/CGPJ, etc. pasan a Servicios Especiales, percibiendo las retribuciones del cargo y conservando el derecho a reserva al menos de un puesto en la misma localidad y con iguales retribuciones.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q09',
+    block: 4,
+    topic: 'Excedencia por Cuidado de Familiares',
+    question: 'Según el artículo 89.4 del TREBEP, el período de duración de la excedencia para atender al cuidado de cada hijo tendrá una duración no superior a:',
+    options: [
+      'Un año, con reserva del puesto durante todo el año.',
+      'Tres años, con reserva del puesto de trabajo desempeñado al menos durante dos años; transcurrido este periodo, dicha reserva lo será a un puesto en la misma localidad y de igual retribución.',
+      'Cinco años sin reserva de puesto alguno.',
+      'Dieciocho meses.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 89.4 RDL 5/2015 (TREBEP)',
+    explanation: 'La excedencia por cuidado de hijos o familiares (hasta 2.º grado) tiene duración máxima de 3 años. El puesto desempeñado se reserva durante al menos 2 años; el tercer año la reserva es a un puesto en la misma localidad y de igual retribución.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b4-q10',
+    block: 4,
+    topic: 'Excedencia Voluntaria por Interés Particular',
+    question: 'De acuerdo con el artículo 89.2 del TREBEP y la normativa de función pública de la AGE, para obtener la excedencia voluntaria por interés particular se requiere haber prestado servicios efectivos en cualquiera de las Administraciones Públicas durante un periodo mínimo de:',
+    options: [
+      'Dos años inmediatamente anteriores.',
+      'Cinco años inmediatamente anteriores.',
+      'Tres años inmediatamente anteriores.',
+      'Un año desde la toma de posesión.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 89.2 RDL 5/2015 (TREBEP)',
+    explanation: 'El art. 89.2 TREBEP exige haber prestado servicios efectivos en cualquiera de las AAPP durante un periodo mínimo de CINCO años inmediatamente anteriores (y las leyes de función pública podrán establecer una duración menor del periodo de prestación de servicios o exigir un periodo mínimo de permanencia).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q11',
+    block: 4,
+    topic: 'Permisos de los Funcionarios (Art. 48 TREBEP)',
+    question: 'Conforme al artículo 48.a) del TREBEP (redacción vigente tras RDL 5/2023), por accidente o enfermedad graves, hospitalización o intervención quirúrgica sin hospitalización que precise de reposo domiciliario del cónyuge, pareja de hecho o parientes hasta el primer grado por consanguinidad o afinidad, el funcionario tiene derecho a un permiso de:',
+    options: [
+      'Tres días hábiles en la misma localidad y cinco en distinta localidad.',
+      'Cinco días hábiles.',
+      'Cuatro días hábiles en la misma localidad y seis en distinta.',
+      'Dos días hábiles.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 48.a) RDL 5/2015 (TREBEP, mod. RDL 5/2023)',
+    explanation: 'El RDL 5/2023 amplió este permiso a CINCO días hábiles para cónyuge, pareja de hecho, parientes de primer grado y cualquier otra persona distinta que conviva con el funcionario y requiera su cuidado efectivo (y 4 días hábiles para parientes de segundo grado).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b4-q12',
+    block: 4,
+    topic: 'Permiso por Nacimiento y Lactancia',
+    question: 'Según el artículo 49.a) y b) del TREBEP, el permiso por nacimiento para la madre biológica y el permiso del progenitor diferente de la madre biológica por nacimiento, guarda con fines de adopción, acogimiento o adopción tiene una duración de:',
+    options: [
+      'Dieciséis semanas, de las cuales las seis semanas inmediatas posteriores al parto serán en todo caso de descanso obligatorio e ininterrumpidas.',
+      'Dieciséis semanas para la madre biológica y doce semanas para el otro progenitor.',
+      'Veinte semanas en todo caso.',
+      'Catorce semanas, siendo cuatro obligatorias tras el parto.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 49.a) y 49.b) RDL 5/2015 (TREBEP)',
+    explanation: 'Ambos permisos están equiparados en 16 semanas (ampliables en 2 semanas más en supuestos de discapacidad del hijo o parto/adopción múltiple, una por cada progenitor), siendo obligatorias e ininterrumpidas las 6 semanas inmediatamente posteriores al parto.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q13',
+    block: 4,
+    topic: 'Vacaciones y Asuntos Particulares',
+    question: 'De acuerdo con el artículo 50.1 y el artículo 48.k) del TREBEP, los funcionarios públicos tendrán derecho a disfrutar como mínimo por cada año natural:',
+    options: [
+      'Veintidós días hábiles de vacaciones retribuidas y seis días de permiso por asuntos particulares.',
+      'Treinta días hábiles de vacaciones y cuatro días de asuntos particulares.',
+      'Veinte días hábiles de vacaciones y cinco días de asuntos particulares.',
+      'Veintidós días naturales de vacaciones y seis días de asuntos particulares.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 48.k) y Art. 50.1 RDL 5/2015 (TREBEP)',
+    explanation: 'Vacaciones: 22 días hábiles (no se consideran hábiles los sábados, sin perjuicio de las adaptaciones horarias). Asuntos particulares: 6 días al año (incrementables por trienios a partir del 6.º trienio conforme a la Disp. Adic. 13.ª / resoluciones de jornada).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q14',
+    block: 4,
+    topic: 'Régimen Disciplinario — Prescripción de Faltas',
+    question: 'Según el artículo 97.1 del TREBEP, ¿en qué plazos prescriben las infracciones disciplinarias muy graves, graves y leves respectivamente?',
+    options: [
+      'Muy graves a los 3 años, graves a los 2 años y leves a los 6 meses.',
+      'Muy graves a los 5 años, graves a los 3 años y leves al año.',
+      'Muy graves a los 4 años, graves a los 2 años y leves a los 3 meses.',
+      'Todas prescriben al año de su comisión.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 97.1 RDL 5/2015 (TREBEP)',
+    explanation: 'Tanto las infracciones como las sanciones prescriben en los mismos plazos en el art. 97 TREBEP: muy graves a los 3 años, graves a los 2 años y leves a los 6 meses.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q15',
+    block: 4,
+    topic: 'Suspensión Provisional en Expediente Disciplinario',
+    question: 'Conforme al artículo 98.3 del TREBEP, la suspensión provisional como medida cautelar en la tramitación de un expediente disciplinario no podrá exceder de:',
+    options: [
+      'Tres meses, salvo paralización del procedimiento imputable al interesado.',
+      'Seis meses, salvo en caso de paralización del procedimiento imputable al interesado.',
+      'Un año prorrogable por otro año.',
+      'Dos meses en todo caso.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 98.3 RDL 5/2015 (TREBEP)',
+    explanation: 'La suspensión provisional no puede exceder de 6 meses (salvo paralización imputable al interesado). Durante la suspensión provisional, el funcionario percibe únicamente las retribuciones básicas y, en su caso, las prestaciones familiares por hijo a cargo.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b4-q16',
+    block: 4,
+    topic: 'Incompatibilidades (Ley 53/1984)',
+    question: 'Según la Ley 53/1984, de Incompatibilidades del personal al servicio de las Administraciones Públicas, el desempeño de un segundo puesto de trabajo o actividad en el sector público podrá autorizarse excepcionalmente por razón de interés público para actividades docentes o de investigación, pero para el ejercicio de actividades privadas se requiere:',
+    options: [
+      'Únicamente comunicación verbal al Jefe de Servicio.',
+      'Previo reconocimiento de compatibilidad, sin que en ningún caso pueda ejercerse si el complemento específico percibido supera el 30 % de las retribuciones básicas (excluidos conceptos de antigüedad) salvo autorización expresa para reducción.',
+      'Que el funcionario pertenezca al Grupo A1 exclusivamente.',
+      'No se requiere trámite alguno si se realiza fuera de la jornada laboral.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 14 y Art. 16.4 Ley 53/1984 (y DA 5.ª RDL 20/2012)',
+    explanation: 'El ejercicio de actividades profesionales, laborales, mercantiles o industriales fuera de las AAPP requiere previo reconocimiento de compatibilidad (art. 14), y no podrá autorizarse cuando se perciba complemento específico cuya cuantía supere el 30 % de la retribución básica (salvo renuncia/reducción cuando proceda según normativa).',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b4-q17',
+    block: 4,
+    topic: 'MUFACE y Seguridad Social',
+    question: 'Desde el 1 de enero de 2011, los funcionarios de nuevo ingreso de la Administración General del Estado quedan integrados, a efectos de pensiones (jubilación, incapacidad, muerte y supervivencia), en:',
+    options: [
+      'El Régimen de Clases Pasivas del Estado exclusivamente.',
+      'El Régimen General de la Seguridad Social, manteniendo su adscripción a MUFACE para la asistencia sanitaria y determinadas prestaciones del mutualismo administrativo.',
+      'El Régimen Especial de Trabajadores Autónomos.',
+      'Exclusivamente en MUFACE tanto para pensiones como para asistencia sanitaria.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 20 RDL 13/2010 y RDL 4/2000 (MUFACE)',
+    explanation: 'El RDL 13/2010 integró en el Régimen General de la Seguridad Social (a efectos de pensiones) al personal funcionario de nuevo ingreso desde el 1 de enero de 2011, manteniéndose la cobertura sanitaria y social complementaria en el Mutualismo Administrativo (MUFACE).',
+    difficulty: 'medio',
+    isTrapWord: true,
+    trapWord: 'exclusivamente',
+  },
+  {
+    id: 'b4-q18',
+    block: 4,
+    topic: 'Negociación Colectiva — Materias Excluidas',
+    question: 'Según el artículo 37.2 del TREBEP, queda EXCLUIDA de la obligatoriedad de negociación colectiva en las Mesas de Negociación:',
+    options: [
+      'La determinación y aplicación de las retribuciones complementarias de los funcionarios.',
+      'Las decisiones de las Administraciones Públicas que afecten a sus potestades de organización.',
+      'Los criterios generales de acción social.',
+      'Los planes de previsión social complementaria.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 37.2.a) RDL 5/2015 (TREBEP)',
+    explanation: 'Están excluidas de la obligatoriedad de negociación: las decisiones sobre potestades de organización (salvo cuando tengan repercusión sobre condiciones de trabajo), la regulación del ejercicio de derechos frente a AAPP, la determinación de condiciones de trabajo del personal directivo y los poderes de dirección y control propios de la relación jerárquica.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b4-q19',
+    block: 4,
+    topic: 'Órganos de Representación — Juntas de Personal',
+    question: 'De acuerdo con el artículo 39.2 del TREBEP, se constituirá una Junta de Personal en las unidades electorales que cuenten con un censo mínimo de:',
+    options: [
+      '25 funcionarios.',
+      '50 funcionarios.',
+      '100 funcionarios.',
+      '10 funcionarios.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 39.2 RDL 5/2015 (TREBEP)',
+    explanation: 'Las Juntas de Personal se constituyen en unidades electorales con un censo mínimo de 50 funcionarios (entre 6 y 49 funcionarios se eligen Delegados de Personal: 1 hasta 30 y 3 de 31 a 49).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b4-q20',
+    block: 4,
+    topic: 'Deberes y Código de Conducta',
+    question: 'Según el artículo 53.6 del TREBEP (principios éticos), respecto a los regalos, favores o servicios en condiciones ventajosas que vayan más allá de los usos habituales, sociales y de cortesía, los empleados públicos:',
+    options: [
+      'Podrán aceptarlos siempre que su valor no supere los 300 euros.',
+      'Rechazarán cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía, sin perjuicio de lo establecido en el Código Penal.',
+      'Deberán entregarlos al Subsecretario si superan los 150 euros.',
+      'Solo deben rechazarlos si proceden de empresas contratistas en vigor.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 53.6 RDL 5/2015 (TREBEP)',
+    explanation: 'El principio ético del art. 53.6 TREBEP es categórico: se rechazará cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía.',
+    difficulty: 'base',
+  },
+];

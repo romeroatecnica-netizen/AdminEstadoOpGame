@@ -1,0 +1,328 @@
+import { Question } from '../types';
+
+export const BLOQUE_3_QUESTIONS: Question[] = [
+  {
+    id: 'b3-q01',
+    block: 3,
+    topic: 'Nulidad de Pleno Derecho',
+    question: 'Conforme al artículo 47.1 de la Ley 39/2015 (LPACAP), ¿cuál de los siguientes supuestos determina la NULIDAD de pleno derecho de un acto administrativo y NO su mera anulabilidad?',
+    options: [
+      'El defecto de forma cuando el acto carece de los requisitos formales indispensables para alcanzar su fin.',
+      'Los actos dictados por órgano manifiestamente incompetente por razón de la materia o del territorio.',
+      'La realización de actuaciones administrativas fuera del tiempo establecido cuando lo imponga la naturaleza del término o plazo.',
+      'Los actos dictados por órgano incompetente por razón de la jerarquía.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 47.1.b) y Art. 48 Ley 39/2015 (LPACAP)',
+    explanation: 'La incompetencia manifiesta por razón de la MATERIA o del TERRITORIO produce nulidad de pleno derecho (art. 47.1.b). La incompetencia jerárquica y los defectos de forma o plazo son causas de anulabilidad (art. 48), salvo convalidación.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q02',
+    block: 3,
+    topic: 'Cómputo de Plazos',
+    question: 'Según el artículo 30.2 de la Ley 39/2015 (LPACAP), siempre que por Ley o en el Derecho de la Unión Europea no se exprese otro cómputo, cuando los plazos se señalen por días, se entiende que estos son:',
+    options: [
+      'Naturales, excluyéndose únicamente los domingos y festivos.',
+      'Hábiles, excluyéndose del cómputo los sábados, los domingos y los declarados festivos.',
+      'Hábiles, incluyéndose los sábados pero excluyendo domingos y festivos nacionales.',
+      'Naturales en todo caso.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 30.2 Ley 39/2015 (LPACAP)',
+    explanation: 'Desde la entrada en vigor de la Ley 39/2015, salvo que por Ley o Derecho de la UE se exprese otro cómputo, los plazos por días se entienden HÁBILES, excluyendo sábados, domingos y los declarados festivos.',
+    difficulty: 'base',
+    isTrapWord: true,
+    trapWord: 'en todo caso',
+  },
+  {
+    id: 'b3-q03',
+    block: 3,
+    topic: 'Cómputo por Meses o Años',
+    question: 'Un interesado recibe una notificación el día 31 de enero. Dispone de un plazo de UN MES para interponer recurso de alzada. Si el mes de febrero de ese año tiene 28 días, ¿cuándo vence el plazo conforme al artículo 30.4 de la Ley 39/2015?',
+    options: [
+      'El 1 de marzo (o siguiente hábil).',
+      'El 28 de febrero (último día del mes de vencimiento, o siguiente hábil si fuese inhábil).',
+      'El 3 de marzo al trasladarse los tres días restantes.',
+      'El 2 de marzo al contarse treinta días naturales.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 30.4 Ley 39/2015 (LPACAP)',
+    explanation: 'Los plazos en meses o años se computan de fecha a fecha a partir del día siguiente a la notificación. Si en el mes de vencimiento no hubiera día equivalente a aquel en que comienza el cómputo (31 en febrero), se entiende que el plazo expira el último día del mes (28 de febrero, o 29 si es bisiesto).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q04',
+    block: 3,
+    topic: 'Silencio Administrativo en Recursos',
+    question: 'Según el artículo 24.1 de la Ley 39/2015, si un interesado interpone un recurso de alzada contra la DESESTIMACIÓN POR SILENCIO ADMINISTRATIVO de una solicitud suya, y la Administración tampoco resuelve el recurso de alzada en el plazo de tres meses, el sentido del silencio en este recurso será:',
+    options: [
+      'Negativo, porque todos los recursos se entienden desestimados por silencio.',
+      'Positivo (estimatorio), salvo en las materias excepcionadas del párrafo segundo del art. 24.1 (ej. ejercicio del derecho de petición, dominio público o servicio público, actividades dañosas al medio ambiente y responsabilidad patrimonial).',
+      'Caducidad del procedimiento de recurso.',
+      'Positivo exclusivamente si el recurso fue presentado en registro presencial.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 24.1 párrafo 3.º Ley 39/2015 (LPACAP)',
+    explanation: 'Es la famosa excepción al silencio negativo en vía de recurso (doble silencio): cuando el recurso de alzada se haya interpuesto contra la desestimación por silencio administrativo de una solicitud por el transcurso del plazo, se entenderá ESTIMADO si llegado el plazo de resolución del recurso tampoco se dicta y notifica resolución expresa (con las excepciones del art. 24.1.2º).',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b3-q05',
+    block: 3,
+    topic: 'Ampliación y Tramitación de Urgencia',
+    question: 'Conforme al artículo 33 de la Ley 39/2015, cuando razones de interés público lo aconsejen se podrá acordar la aplicación al procedimiento de la tramitación de urgencia, por la cual:',
+    options: [
+      'Se reducirán a la mitad los plazos establecidos para el procedimiento ordinario, incluidos los relativos a la presentación de solicitudes y recursos.',
+      'Se reducirán a la mitad los plazos establecidos para el procedimiento ordinario, salvo los relativos a la presentación de solicitudes y recursos.',
+      'Se reducirán a un tercio todos los plazos de alegaciones y prueba.',
+      'Caben contra dicho acuerdo recurso de alzada o reposición independientes.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 33.1 y 33.2 Ley 39/2015 (LPACAP)',
+    explanation: 'La tramitación de urgencia reduce a la mitad los plazos del procedimiento ordinario, SALVO los relativos a la presentación de solicitudes y recursos. Además, contra el acuerdo de urgencia no cabe recurso alguno.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q06',
+    block: 3,
+    topic: 'Recurso de Alzada',
+    question: '¿Cuál es el plazo para interponer el recurso de alzada contra un acto expreso que NO pone fin a la vía administrativa, y cuál es el plazo máximo para dictar y notificar su resolución?',
+    options: [
+      'Un mes para interponer y un mes para resolver.',
+      'Un mes para interponer y tres meses para resolver.',
+      'Tres meses para interponer y tres meses para resolver.',
+      'Dos meses para interponer y seis meses para resolver.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 122.1 y 122.2 Ley 39/2015 (LPACAP)',
+    explanation: 'Recurso de alzada: plazo de interposición de 1 mes si el acto es expreso (en cualquier momento a partir del día siguiente a que se produzcan los efectos del silencio si es presunto); plazo máximo de resolución y notificación: 3 meses.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q07',
+    block: 3,
+    topic: 'Recurso Potestativo de Reposición',
+    question: 'Respecto al recurso potestativo de reposición regulado en los artículos 123 y 124 de la Ley 39/2015:',
+    options: [
+      'El plazo máximo para dictar y notificar la resolución es de tres meses.',
+      'Contra la resolución de un recurso de reposición podrá interponerse de nuevo dicho recurso si aparecen nuevos documentos.',
+      'El plazo máximo para dictar y notificar la resolución es de un mes.',
+      'Es obligatorio interponerlo antes de acudir a la jurisdicción contencioso-administrativa.'
+    ],
+    correctIndex: 2,
+    articleRef: 'Art. 123 y Art. 124.2 Ley 39/2015 (LPACAP)',
+    explanation: 'El recurso de reposición es potestativo (no obligatorio), tiene 1 mes para interponerse frente a actos expresos y 1 mes de plazo máximo para dictar y notificar su resolución. Nunca cabe un nuevo recurso de reposición contra su resolución.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q08',
+    block: 3,
+    topic: 'Recurso Extraordinario de Revisión',
+    question: 'Si se interpone un recurso extraordinario de revisión fundado en que al dictar el acto firme se incurrió en error de hecho, que resulte de los propios documentos incorporados al expediente, ¿cuál es el plazo de interposición?',
+    options: [
+      'Tres meses a contar desde el conocimiento del error.',
+      'Cuatro años siguientes a la fecha de la notificación de la resolución impugnada.',
+      'Un año desde la firmeza en vía administrativa.',
+      'En cualquier momento sin límite temporal.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 125.2 Ley 39/2015 (LPACAP)',
+    explanation: 'Causa 1.ª del art. 125.1 (error de hecho que resulte de los propios documentos del expediente): plazo de 4 años siguientes a la fecha de notificación. Para las causas 2.ª, 3.ª y 4.ª (documentos esenciales posteriores, documentos/testimonios falsos o prevaricación/cohecho por sentencia firme), el plazo es de 3 meses.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q09',
+    block: 3,
+    topic: 'Revisión de Oficio',
+    question: 'Según el artículo 106.5 de la Ley 39/2015, cuando el procedimiento de revisión de oficio de disposiciones y actos nulos se hubiera iniciado de oficio, el transcurso del plazo de ___ desde su inicio sin dictarse resolución producirá la caducidad del mismo:',
+    options: [
+      'Tres meses.',
+      'Seis meses.',
+      'Un año.',
+      'Dos meses.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 106.5 Ley 39/2015 (LPACAP)',
+    explanation: 'En la revisión de oficio (art. 106.5), el plazo es de 6 meses: si se inició de oficio, produce caducidad; si se inició a solicitud del interesado, se entiende desestimada por silencio administrativo.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q10',
+    block: 3,
+    topic: 'Declaración de Lesividad',
+    question: 'Conforme al artículo 107.2 de la Ley 39/2015, la declaración de lesividad de actos anulables favorables para los interesados no podrá adoptarse una vez transcurridos:',
+    options: [
+      'Dos años desde que se dictó el acto administrativo.',
+      'Cuatro años desde que se dictó el acto administrativo.',
+      'Un año desde su notificación.',
+      'Seis meses desde que el órgano superior tuvo conocimiento.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 107.2 Ley 39/2015 (LPACAP)',
+    explanation: 'La declaración de lesividad solo puede adoptarse dentro de los cuatro años siguientes desde que se dictó el acto administrativo (y el procedimiento caduca a los seis meses desde su iniciación si no se declara la lesividad).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q11',
+    block: 3,
+    topic: 'Plazo de Resolución y Caducidad',
+    question: 'Según el artículo 21.2 y 21.3 de la Ley 39/2015, cuando las normas reguladoras de los procedimientos no fijen el plazo máximo para resolver y notificar, este será de:',
+    options: [
+      'Seis meses.',
+      'Tres meses.',
+      'Un mes.',
+      'Cuarenta y cinco días hábiles.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 21.3 Ley 39/2015 (LPACAP)',
+    explanation: 'El plazo máximo general supletorio para resolver y notificar es de tres meses (y las normas reguladoras no pueden fijar más de seis meses salvo que una norma con rango de ley o el Derecho de la UE prevea otro mayor).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q12',
+    block: 3,
+    topic: 'Abstención y Recusación',
+    question: 'Según el artículo 24 de la Ley 40/2015 (LRJSP), planteada recusación contra un funcionario instructor por un interesado, el recusado manifestará al día siguiente a su inmediato superior si se da o no en él la causa alegada, y el superior resolverá en el plazo de:',
+    options: [
+      'Tres días.',
+      'Cinco días hábiles.',
+      'Diez días.',
+      'Veinticuatro horas.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 24.4 Ley 40/2015 (LRJSP)',
+    explanation: 'Si el recusado niega la causa, el superior resolverá en el plazo de TRES DÍAS, previos los informes y comprobaciones que considere oportunos. Contra la resolución no cabe recurso (sin perjuicio de alegar la recusación en el recurso contra el acto que ponga fin al procedimiento).',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b3-q13',
+    block: 3,
+    topic: 'Órganos Colegiados',
+    question: 'Conforme al artículo 17.2 de la Ley 40/2015 (LRJSP), para la válida constitución de un órgano colegiado, a efectos de celebración de sesiones, deliberaciones y toma de acuerdos, se requerirá en primera convocatoria la asistencia, presencial o a distancia, del:',
+    options: [
+      'Presidente y Secretario o quienes les suplan, y la de la mitad, al menos, de sus miembros.',
+      'Presidente y al menos dos tercios de los vocales.',
+      'Secretario y la mayoría absoluta de los vocales en todo caso.',
+      'Presidente, Secretario y un tercio de los miembros.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 17.2 Ley 40/2015 (LRJSP)',
+    explanation: 'Para la válida constitución del órgano colegiado se exige la asistencia de Presidente y Secretario (o suplentes) y la de la mitad, al menos, de sus miembros.',
+    difficulty: 'base',
+    isTrapWord: true,
+    trapWord: 'en todo caso',
+  },
+  {
+    id: 'b3-q14',
+    block: 3,
+    topic: 'Contratos del Sector Público — Contrato Menor',
+    question: 'De acuerdo con el artículo 118.1 de la Ley 9/2017 (LCSP), se consideran contratos menores los contratos de valor estimado inferior a:',
+    options: [
+      '60.000 euros para contratos de obras y 18.000 euros para suministro o servicios.',
+      '40.000 euros cuando se trate de contratos de obras, o a 15.000 euros cuando se trate de contratos de suministro o de servicios.',
+      '50.000 euros para obras y 15.000 euros para servicios.',
+      '30.000 euros para obras y 12.000 euros para suministros.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 118.1 Ley 9/2017 (LCSP)',
+    explanation: 'Con la LCSP 9/2017 los umbrales del contrato menor son inferiores a 40.000 € (obras) e inferiores a 15.000 € (suministros o servicios), IVA excluido (valor estimado), con duración máxima de 1 año sin prórroga.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q15',
+    block: 3,
+    topic: 'LCSP — Garantía Definitiva',
+    question: 'Según el artículo 107.1 de la Ley 9/2017 (LCSP), como regla general, los licitadores que presenten las mejores ofertas deberán constituir a disposición del órgano de contratación una garantía definitiva de:',
+    options: [
+      'Un 3 por 100 del presupuesto base de licitación, IVA incluido.',
+      'Un 5 por 100 del precio final ofertado por aquellos, excluido el Impuesto sobre el Valor Añadido.',
+      'Un 10 por 100 del valor estimado del contrato.',
+      'Un 4 por 100 del precio de adjudicación, IVA incluido.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 107.1 Ley 9/2017 (LCSP)',
+    explanation: 'La garantía definitiva ordinaria es del 5 % del precio final ofertado, IVA excluido (pudiendo alcanzar hasta un 5 % adicional en casos especiales, total máximo 10 %).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q16',
+    block: 3,
+    topic: 'LCSP — Recurso Especial en Materia de Contratación',
+    question: 'Conforme al artículo 44.1 de la Ley 9/2017 (LCSP), son susceptibles de recurso especial en materia de contratación los contratos de obras cuyo valor estimado sea superior a:',
+    options: [
+      '100.000 euros.',
+      '3.000.000 de euros.',
+      '5.538.000 euros.',
+      '1.000.000 de euros.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 44.1.a) Ley 9/2017 (LCSP)',
+    explanation: 'El recurso especial en materia de contratación procede en contratos de obras con valor estimado > 3.000.000 €, y en contratos de suministros y servicios con valor estimado > 100.000 €.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b3-q17',
+    block: 3,
+    topic: 'Ley General de Subvenciones',
+    question: 'Según el artículo 39.1 de la Ley 38/2003, General de Subvenciones, prescribirá a los ___ el derecho de la Administración a reconocer o liquidar el reintegro:',
+    options: [
+      'Cinco años.',
+      'Cuatro años.',
+      'Tres años.',
+      'Seis años.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 39.1 Ley 38/2003 (LGS)',
+    explanation: 'Al igual que en la Ley General Presupuestaria y en materia tributaria, el derecho de la Administración a reconocer o liquidar el reintegro de subvenciones prescribe a los cuatro años.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q18',
+    block: 3,
+    topic: 'Responsabilidad Patrimonial',
+    question: 'Conforme al artículo 67.1 de la Ley 39/2015, el derecho a reclamar responsabilidad patrimonial de las Administraciones Públicas prescribirá:',
+    options: [
+      'Al año de producido el hecho o el acto que motive la indemnización o se manifieste su efecto lesivo.',
+      'A los cuatro años desde que se produjo el daño.',
+      'A los seis meses desde la curación de las secuelas.',
+      'A los dos años de la notificación de la resolución administrativa.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 67.1 Ley 39/2015 (LPACAP)',
+    explanation: 'La acción para reclamar responsabilidad patrimonial prescribe al AÑO de producido el hecho o de manifestarse el efecto lesivo (en daños físicos o psíquicos, desde la curación o determinación del alcance de las secuelas). El plazo para resolver el procedimiento es de 6 meses con silencio negativo.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b3-q19',
+    block: 3,
+    topic: 'Expropiación Forzosa',
+    question: 'De acuerdo con la Ley de Expropiación Forzosa de 16 de diciembre de 1954, tras la firmeza de la necesidad de ocupación y una vez abierto el expediente de justiprecio, el expropiado dispone para formular su hoja de aprecio de un plazo de:',
+    options: [
+      'Quince días.',
+      'Veinte días.',
+      'Diez días hábiles.',
+      'Un mes.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 29 Ley de Expropiación Forzosa (LEF)',
+    explanation: 'Si no hay mutuo acuerdo en 15 días, se requiere a los propietarios para que presenten hoja de aprecio motivada en el plazo de 20 días (el mismo plazo de 20 días tiene luego la Administración para aceptar o rechazar).',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b3-q20',
+    block: 3,
+    topic: 'Competencia — Avocación y Encomienda',
+    question: 'Según los artículos 9 y 10 de la Ley 40/2015 (LRJSP), ¿qué técnica traslativa de competencia exige que el acuerdo se adopte motivadamente y se notifique a los interesados con anterioridad o simultáneamente a la resolución final que se dicte?',
+    options: [
+      'La delegación de firma.',
+      'La avocación.',
+      'La encomienda de gestión.',
+      'La suplencia temporal.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 10.2 Ley 40/2015 (LRJSP)',
+    explanation: 'La avocación (por la que los órganos superiores atraen el conocimiento de un asunto cuya resolución corresponda ordinariamente o por delegación a sus órganos dependientes) requiere acuerdo motivado notificado a los interesados antes o simultáneamente a la resolución final, y contra dicho acuerdo no cabe recurso independiente.',
+    difficulty: 'medio',
+  },
+];

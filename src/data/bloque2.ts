@@ -1,0 +1,328 @@
+import { Question } from '../types';
+
+export const BLOQUE_2_QUESTIONS: Question[] = [
+  {
+    id: 'b2-q01',
+    block: 2,
+    topic: 'Información Administrativa',
+    question: 'Según el Real Decreto 208/1996, por el que se regulan los servicios de información administrativa y atención al ciudadano, la información particular:',
+    options: [
+      'Se facilitará obligatoriamente a cualquier persona sin necesidad de acreditar legitimación alguna.',
+      'Concierne al estado o contenido de los procedimientos en tramitación y a la identificación de autoridades y personal bajo cuya responsabilidad se tramiten, y solo puede facilitarse a los interesados o a sus representantes legales.',
+      'Incluye la orientación sobre requisitos jurídicos o técnicos de proyectos que cualquier ciudadano desee presentar.',
+      'Tiene carácter vinculante e impugnable en vía contencioso-administrativa.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 3 Real Decreto 208/1996',
+    explanation: 'El RD 208/1996 distingue entre información general (a cualquier ciudadano sin legitimación) e información particular (estado/contenido de procedimientos en tramitación e identificación de responsables), reservada únicamente a quienes tengan la condición de interesados o representantes.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q02',
+    block: 2,
+    topic: 'Quejas y Sugerencias',
+    question: 'Conforme al Real Decreto 951/2005 (Marco general para la mejora de la calidad en la AGE), recibida una queja o sugerencia, la unidad responsable deberá informar al ciudadano de las actuaciones realizadas en el plazo de:',
+    options: [
+      'Diez días hábiles.',
+      'Veinte días hábiles.',
+      'Treinta días naturales.',
+      'Un mes desde su presentación en el registro.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 16.1 Real Decreto 951/2005',
+    explanation: 'El art. 16.1 RD 951/2005 establece que la unidad responsable informará al interesado de las actuaciones realizadas en el plazo de 20 días hábiles, suspendiendo el plazo si se requiere aclaración del interesado (10 días hábiles).',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b2-q03',
+    block: 2,
+    topic: 'Ley de Transparencia — Derecho de Acceso',
+    question: 'De acuerdo con el artículo 20.1 de la Ley 19/2013, de Transparencia, Acceso a la Información Pública y Buen Gobierno, la resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante en el plazo máximo de:',
+    options: [
+      'Quince días hábiles desde la recepción de la solicitud.',
+      'Un mes desde la recepción de la solicitud por el órgano competente para resolver, ampliable por otro mes en caso de volumen o complejidad.',
+      'Tres meses desde la fecha de entrada en el registro electrónico.',
+      'Veinte días naturales improrrogables.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 20.1 Ley 19/2013 (LTAIBG)',
+    explanation: 'El plazo máximo para resolver y notificar en el derecho de acceso a la información pública es de 1 mes desde la recepción por el órgano competente (ampliable 1 mes más si el volumen o complejidad lo hacen necesario). Transcurrido sin resolución, el silencio es NEGATIVO (desestimatorio).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q04',
+    block: 2,
+    topic: 'Ley de Transparencia — Silencio y Reclamación',
+    question: 'Frente a la denegación expresa o presunta de una solicitud de acceso a la información pública en el ámbito de la AGE, ¿qué recurso administrativo potestativo previo al contencioso-administrativo puede interponerse?',
+    options: [
+      'Recurso de alzada ante el Ministro competente en el plazo de dos meses.',
+      'Reclamación ante el Consejo de Transparencia y Buen Gobierno en el plazo de un mes a contar desde el día siguiente al de la notificación del acto o al de efectos del silencio.',
+      'Recurso extraordinario de revisión ante la Agencia Española de Protección de Datos.',
+      'No cabe recurso alguno en vía administrativa.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 24.1 y 24.2 Ley 19/2013 (LTAIBG)',
+    explanation: 'El art. 24 LTAIBG crea la reclamación potestativa y sustitutiva de los recursos administrativos ante el Consejo de Transparencia y Buen Gobierno en el plazo de 1 mes (el plazo máximo de resolución del CTBG es de 3 meses, con silencio negativo).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q05',
+    block: 2,
+    topic: 'RGPD — Principios y Consentimiento',
+    question: 'Según la Ley Orgánica 3/2018 (LOPDGDD), el tratamiento de datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de:',
+    options: [
+      'Dieciséis años.',
+      'Catorce años.',
+      'Doce años.',
+      'Dieciocho años en todo caso.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 7.1 LO 3/2018 (LOPDGDD)',
+    explanation: 'Aunque el RGPD fija los 16 años permitiendo a los Estados rebajarlo hasta 13, España fijó en el art. 7.1 de la LOPDGDD el umbral en mayores de catorce años.',
+    difficulty: 'base',
+    isTrapWord: true,
+    trapWord: 'en todo caso',
+  },
+  {
+    id: 'b2-q06',
+    block: 2,
+    topic: 'RGPD — Plazo de Respuesta a Derechos',
+    question: 'Conforme al artículo 12.3 del RGPD, el responsable del tratamiento facilitará al interesado información relativa a sus actuaciones sobre una solicitud de ejercicio de derechos (acceso, rectificación, supresión, etc.) en el plazo de:',
+    options: [
+      'Diez días hábiles desde la presentación.',
+      'Un mes a partir de la recepción de la solicitud, prorrogable otros dos meses teniendo en cuenta la complejidad y el número de solicitudes.',
+      'Setenta y dos horas desde la recepción.',
+      'Quince días naturales improrrogables.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 12.3 Reglamento (UE) 2016/679 (RGPD)',
+    explanation: 'El plazo general de respuesta al ejercicio de derechos ARSULIPO es de 1 mes desde la recepción, prorrogable otros 2 meses (informando al interesado dentro del primer mes). Nota: 72 horas es el plazo para notificar brechas de seguridad a la autoridad de control (art. 33 RGPD).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q07',
+    block: 2,
+    topic: 'RGPD — Brechas de Seguridad',
+    question: 'En caso de violación de la seguridad de los datos personales, el responsable del tratamiento la notificará a la autoridad de control competente (AEPD) sin dilación indebida y, de ser posible, a más tardar en:',
+    options: [
+      '24 horas después de que haya tenido constancia de ella.',
+      '72 horas después de que haya tenido constancia de ella, a menos que sea improbable que constituya un riesgo para los derechos y libertades.',
+      '10 días hábiles desde que se produjo el incidente técnico.',
+      '1 mes desde el cierre de la auditoría interna.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 33.1 Reglamento (UE) 2016/679 (RGPD)',
+    explanation: 'El art. 33.1 RGPD establece el plazo de 72 horas desde que se tenga constancia de la brecha de seguridad, salvo que sea improbable que suponga un riesgo para los derechos y libertades de las personas físicas.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q08',
+    block: 2,
+    topic: 'LOPDGDD — Delegado de Protección de Datos',
+    question: 'Según el artículo 34 de la LO 3/2018 (LOPDGDD), ¿quién está obligada en todo caso a designar un Delegado de Protección de Datos (DPD)?',
+    options: [
+      'Exclusivamente las empresas privadas de más de 250 trabajadores.',
+      'Todas las Administraciones Públicas, organismos autónomos, colegios profesionales, centros docentes y entidades enumeradas en el art. 34.1.',
+      'Únicamente los Ministerios con competencias sanitarias o de seguridad.',
+      'Solo las entidades locales de más de 50.000 habitantes.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 34.1 LO 3/2018 y Art. 37.1.a) RGPD',
+    explanation: 'El art. 37.1.a) RGPD exige DPD siempre que el tratamiento lo lleve a cabo una autoridad u organismo público (excepto los tribunales en ejercicio de su función judicial).',
+    difficulty: 'base',
+    isTrapWord: true,
+    trapWord: 'Exclusivamente',
+  },
+  {
+    id: 'b2-q09',
+    block: 2,
+    topic: 'Derechos de las Personas ante las AAPP',
+    question: 'Según el artículo 14.2 de la Ley 39/2015, ¿quiénes NO están obligados en todo caso a relacionarse a través de medios electrónicos con las Administraciones Públicas para la realización de cualquier trámite?',
+    options: [
+      'Las personas jurídicas.',
+      'Quienes ejerzan una actividad profesional para la que se requiera colegiación obligatoria, en el ejercicio de dicha actividad.',
+      'Las personas físicas que no formen parte de ningún colectivo obligado reglamentariamente.',
+      'Los empleados públicos para los trámites y actuaciones que realicen con las Administraciones Públicas por razón de su condición de empleado público.'
+    ],
+    correctIndex: 2,
+    articleRef: 'Art. 14.1 y 14.2 Ley 39/2015 (LPACAP)',
+    explanation: 'Las personas físicas pueden elegir en todo momento si se comunican con las AAPP por medios electrónicos o no (art. 14.1), salvo que estén obligadas por pertenecer a los colectivos del art. 14.2 o norma reglamentaria.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q10',
+    block: 2,
+    topic: 'Registros Electrónicos y Asistencia',
+    question: 'Conforme al artículo 16.4 de la Ley 39/2015, los documentos que los interesados dirijan a los órganos de las Administraciones Públicas NO podrán presentarse:',
+    options: [
+      'En el registro electrónico de la Administración u Organismo al que se dirijan.',
+      'En las oficinas de Correos, en la forma que reglamentariamente se establezca.',
+      'En las representaciones diplomáticas u oficinas consulares de España en el extranjero.',
+      'En las notarías mediante comparecencia verbal sin soporte escrito ni electrónico.'
+    ],
+    correctIndex: 3,
+    articleRef: 'Art. 16.4 Ley 39/2015 (LPACAP)',
+    explanation: 'El art. 16.4 enumera: registro electrónico de la Administración u organismo (y los de otras AAPP del art. 2.1), oficinas de Correos, representaciones diplomáticas/consulares, oficinas de asistencia en materia de registros y cualquier otro que establezcan las disposiciones vigentes. No incluye notarías mediante comparecencia verbal.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q11',
+    block: 2,
+    topic: 'Copias Auténticas y Digitalización',
+    question: 'De acuerdo con el artículo 27.2 de la Ley 39/2015, las copias auténticas realizadas por una Administración Pública tendrán la misma validez y eficacia que los documentos originales:',
+    options: [
+      'Únicamente ante la Administración Pública que expidió la copia.',
+      'En todas las Administraciones Públicas.',
+      'Solo si van acompañadas del documento original en soporte papel.',
+      'Durante un plazo máximo de seis meses desde su emisión.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 27.2 Ley 39/2015 (LPACAP)',
+    explanation: 'Las copias auténticas de documentos privados o públicos realizadas por una Administración Pública tienen la misma validez y eficacia que los documentos originales en TODAS las Administraciones Públicas.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q12',
+    block: 2,
+    topic: 'Notificaciones Electrónicas',
+    question: 'Según el artículo 43.2 de la Ley 39/2015, cuando la notificación por medios electrónicos sea de carácter obligatorio o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido:',
+    options: [
+      'Diez días hábiles desde la puesta a disposición de la notificación sin que se acceda a su contenido.',
+      'Diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.',
+      'Quince días naturales desde el envío del aviso al correo electrónico del interesado.',
+      'Cinco días hábiles desde el primer intento de puesta a disposición.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 43.2 Ley 39/2015 (LPACAP)',
+    explanation: 'Pregunta clásica de examen: el rechazo presunto en la notificación electrónica se produce a los DIEZ DÍAS NATURALES desde la puesta a disposición (no hábiles, ni desde el aviso informativo).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q13',
+    block: 2,
+    topic: 'Sede Electrónica y Punto de Acceso General',
+    question: 'De acuerdo con el Real Decreto 203/2021 (Reglamento de actuación y funcionamiento del sector público por medios electrónicos), la creación de una sede electrónica en la AGE se realizará mediante:',
+    options: [
+      'Real Decreto del Consejo de Ministros.',
+      'Orden de la persona titular del Departamento competente o resolución de la persona titular de la Presidencia o Dirección del organismo público o entidad de derecho público.',
+      'Resolución conjunta de la Secretaría de Estado de Función Pública y la Fábrica Nacional de Moneda y Timbre.',
+      'Ley orgánica aprobada por las Cortes Generales.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 10.3 Real Decreto 203/2021',
+    explanation: 'En la AGE y sus organismos públicos, las sedes electrónicas se crean mediante Orden ministerial o Resolución del titular de la Presidencia/Dirección del organismo, publicada en el BOE.',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b2-q14',
+    block: 2,
+    topic: 'Sistemas de Identificación y Firma',
+    question: 'Según el artículo 11.2 de la Ley 39/2015, las Administraciones Públicas solo requerirán a los interesados el uso obligatorio de firma para:',
+    options: [
+      'Consultar el estado de tramitación de un expediente en la Carpeta Ciudadana.',
+      'Formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos.',
+      'Solicitar información general telefónica en el teléfono 060.',
+      'Acceder al contenido de una notificación electrónica ya puesta a disposición.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 11.2 Ley 39/2015 (LPACAP)',
+    explanation: 'El art. 11.2 enumera taxativamente los 5 actos que requieren firma obligatoria: 1) formular solicitudes, 2) presentar declaraciones responsables o comunicaciones, 3) interponer recursos, 4) desistir de acciones y 5) renunciar a derechos.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q15',
+    block: 2,
+    topic: 'Esquema Nacional de Seguridad',
+    question: '¿Qué norma vigente regula el Esquema Nacional de Seguridad (ENS) en el ámbito de la Administración Electrónica?',
+    options: [
+      'Real Decreto 3/2010.',
+      'Real Decreto 311/2022.',
+      'Real Decreto 4/2010.',
+      'Ley 59/2003.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Real Decreto 311/2022, de 3 de mayo (ENS)',
+    explanation: 'El Real Decreto 311/2022 derogó y sustituyó al antiguo RD 3/2010 como marco regulador del Esquema Nacional de Seguridad. El RD 4/2010 sigue regulando el Esquema Nacional de Interoperabilidad (ENI).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q16',
+    block: 2,
+    topic: 'Archivo Electrónico Único',
+    question: 'Conforme al artículo 17 de la Ley 39/2015, cada Administración deberá mantener un archivo electrónico único de los documentos electrónicos que correspondan a procedimientos:',
+    options: [
+      'En fase de iniciación.',
+      'Finalizados.',
+      'Únicamente los de contratación y subvenciones.',
+      'Que tengan una antigüedad superior a cinco años.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 17.1 Ley 39/2015 (LPACAP)',
+    explanation: 'El art. 17.1 LPACAP obliga a cada Administración a mantener un archivo electrónico único de los documentos electrónicos correspondientes a procedimientos finalizados.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q17',
+    block: 2,
+    topic: 'Sello Electrónico y Actuación Automatizada',
+    question: 'Según el artículo 42 de la Ley 40/2015 (LRJSP), ¿qué sistemas de firma electrónica puede utilizar una Administración Pública en el ejercicio de la competencia en la actuación administrativa automatizada?',
+    options: [
+      'Sello electrónico de Administración Pública u órgano/organismo, o Código Seguro de Verificación (CSV).',
+      'Únicamente certificado de representante de persona jurídica.',
+      'Firma manuscrita digitalizada en tableta por el Subsecretario.',
+      'Cl@ve PIN del funcionario habilitado.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 42 Ley 40/2015 (LRJSP)',
+    explanation: 'En la actuación administrativa automatizada, cada AAPP determina los supuestos de uso del Sello electrónico de Administración Pública/órgano o del Código Seguro de Verificación (CSV) vinculado a la AAPP.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q18',
+    block: 2,
+    topic: 'Registro Electrónico de Apoderamientos',
+    question: 'De acuerdo con el artículo 6.6 de la Ley 39/2015, los poderes inscritos en el Registro Electrónico de Apoderamientos tendrán una validez determinada máxima de:',
+    options: [
+      'Dos años a contar desde la fecha de inscripción.',
+      'Cinco años a contar desde la fecha de inscripción.',
+      'Diez años desde su otorgamiento apud acta.',
+      'Cuatro años improrrogables.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 6.6 Ley 39/2015 (LPACAP)',
+    explanation: 'Los poderes inscritos en el registro tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción, pudiendo el poderdante revocarlos o prorrogarlos por un plazo máximo de cinco años en cada prórroga.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b2-q19',
+    block: 2,
+    topic: 'Aportación de Documentos por los Interesados',
+    question: 'Según el artículo 28.2 de la Ley 39/2015, los interesados tienen derecho a no aportar documentos que ya se encuentren en poder de la Administración actuante o hayan sido elaborados por cualquier otra Administración. La Administración podrá consultar o recabar dichos documentos salvo que:',
+    options: [
+      'El interesado se oponga a ello expresamente (y no se trate de procedimientos sancionadores o de inspección donde no quepa oposición por ley).',
+      'Se trate de documentos expedidos por Comunidades Autónomas distintas.',
+      'El importe del procedimiento supere los 15.000 euros.',
+      'El documento tenga más de un año de antigüedad.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 28.2 Ley 39/2015 (LPACAP)',
+    explanation: 'La Administración presume autorizada la consulta/recabación interadministrativa de documentos salvo que el interesado conste su oposición expresa (o la ley especial aplicable requiera consentimiento expreso).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b2-q20',
+    block: 2,
+    topic: 'Registro de Funcionarios Habilitados',
+    question: 'Según el artículo 12.3 de la Ley 39/2015, si un interesado no obligado a relacionarse electrónicamente no dispone de los medios electrónicos necesarios, su identificación o firma electrónica en el procedimiento podrá ser válidamente realizada por un funcionario público mediante el uso del sistema de firma electrónica del que esté dotado, siempre que:',
+    options: [
+      'El interesado se identifique ante el funcionario y preste su consentimiento expreso para esta actuación, de lo que deberá quedar constancia para los casos de discrepancia o litigio.',
+      'El funcionario ostente al menos el puesto de Jefe de Servicio.',
+      'Se formalice previamente escritura pública notarial.',
+      'Lo autorice el Delegado de Protección de Datos del Ministerio.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 12.2 y 12.3 Ley 39/2015 (LPACAP)',
+    explanation: 'El art. 12.2 LPACAP exige que el interesado se identifique ante el funcionario y preste su consentimiento expreso, quedando constancia de ello. Los funcionarios habilitados constan en un registro interoperable.',
+    difficulty: 'medio',
+  },
+];

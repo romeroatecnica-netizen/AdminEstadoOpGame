@@ -1,0 +1,326 @@
+import { Question } from '../types';
+
+export const BLOQUE_5_QUESTIONS: Question[] = [
+  {
+    id: 'b5-q01',
+    block: 5,
+    topic: 'Presupuestos Generales del Estado (CE Art. 134)',
+    question: 'Conforme al artículo 134.3 de la Constitución Española, el Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos:',
+    options: [
+      'Dos meses antes de la expiración de los del año anterior.',
+      'Tres meses antes de la expiración de los del año anterior.',
+      'Cuatro meses antes del 1 de enero del ejercicio siguiente.',
+      'Antes del 15 de octubre en todo caso.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 134.3 Constitución Española de 1978',
+    explanation: 'El art. 134.3 CE exige que el Gobierno presente los PGE ante el Congreso al menos tres meses antes de la expiración de los del año anterior (antes del 1 de octubre). Si no se aprueban antes del primer día del ejercicio económico, se consideran automáticamente prorrogados los del ejercicio anterior (art. 134.4 CE).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q02',
+    block: 5,
+    topic: 'Clasificación Económica de Gastos',
+    question: 'Según el artículo 40 de la Ley 47/2003, General Presupuestaria (LGP), en la clasificación económica de los estados de gastos, ¿a qué capítulo pertenecen los "Gastos en bienes corrientes y servicios"?',
+    options: [
+      'Capítulo 1.',
+      'Capítulo 2.',
+      'Capítulo 4.',
+      'Capítulo 6.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 40.1.a) Ley 47/2003 (LGP)',
+    explanation: 'Operaciones corrientes: Cap. 1 Gastos de personal; Cap. 2 Gastos corrientes en bienes y servicios; Cap. 3 Gastos financieros; Cap. 4 Transferencias corrientes; Cap. 5 Fondo de Contingencia. Operaciones de capital: Cap. 6 Inversiones reales; Cap. 7 Transferencias de capital. Operaciones financieras: Cap. 8 Activos financieros; Cap. 9 Pasivos financieros.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q03',
+    block: 5,
+    topic: 'Especificación de los Créditos',
+    question: 'Conforme al artículo 43.1 de la Ley 47/2003 (LGP), en el presupuesto del Estado los créditos para gastos se especificarán a nivel de concepto, salvo determinados supuestos. ¿A qué nivel se especifican los créditos destinados a gastos de personal (Capítulo 1) y gastos corrientes en bienes y servicios (Capítulo 2)?',
+    options: [
+      'A nivel de subconcepto.',
+      'A nivel de artículo.',
+      'A nivel de capítulo.',
+      'A nivel de partida presupuestaria individual.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 43.1 Ley 47/2003 (LGP)',
+    explanation: 'El art. 43.1 LGP establece como regla general el nivel de concepto, pero especifica a nivel de ARTÍCULO los créditos de Cap. 1 (gastos de personal), Cap. 2 (gastos corrientes en bienes y servicios) y Cap. 6 (inversiones reales), salvo excepciones como atenciones protocolarias o determinados gastos de personal.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q04',
+    block: 5,
+    topic: 'Especialidad Temporal — Anualidad',
+    question: 'Según el artículo 49.2 de la Ley 47/2003 (LGP), ¿qué sucede con los créditos para gastos que en el último día del ejercicio presupuestario no estén afectados al cumplimiento de obligaciones ya reconocidas?',
+    options: [
+      'Se incorporan automáticamente al ejercicio siguiente sin necesidad de acuerdo.',
+      'Quedarán anulados de pleno derecho, sin perjuicio de los supuestos excepcionales de incorporación previstos en el artículo 58.',
+      'Se transfieren al Fondo de Contingencia.',
+      'Permanecen vigentes hasta el 31 de marzo del ejercicio siguiente.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 49.2 Ley 47/2003 (LGP)',
+    explanation: 'El principio de anualidad temporal determina que los créditos no afectados al cumplimiento de obligaciones reconocidas a 31 de diciembre quedan anulados de pleno derecho (salvo las excepciones tasadas de incorporación del art. 58 LGP).',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q05',
+    block: 5,
+    topic: 'Fondo de Contingencia',
+    question: 'De acuerdo con el artículo 50 de la Ley 47/2003 (LGP), la cuantía del Fondo de Contingencia de ejecución presupuestaria en el presupuesto del Estado será equivalente al:',
+    options: [
+      '1 % del total de gastos para operaciones financieras.',
+      '2 % del total de gastos para operaciones no financieras, destinados únicamente a atender necesidades de carácter no discrecional y no previstas en el Presupuesto inicialmente aprobado.',
+      '5 % de los créditos de inversiones reales.',
+      '3 % del Producto Interior Bruto nominal.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 50.1 Ley 47/2003 (LGP)',
+    explanation: 'El Fondo de Contingencia asciende al 2 % del total de gastos para operaciones no financieras y solo financia ampliaciones de crédito (art. 54), créditos extraordinarios y suplementos de crédito (art. 55) e incorporaciones de crédito (art. 58) para necesidades no discrecionales ni previstas.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q06',
+    block: 5,
+    topic: 'Transferencias de Crédito — Limitaciones',
+    question: 'Según el artículo 52.1 de la Ley 47/2003 (LGP), las transferencias de crédito están sujetas a varias restricciones. ¿Cuál de las siguientes afirmaciones es CORRECTA?',
+    options: [
+      'Pueden realizarse libremente desde créditos para operaciones de capital hacia créditos para operaciones corrientes.',
+      'No podrán realizarse desde créditos para operaciones financieras al resto de los créditos, ni desde créditos para operaciones de capital a créditos para operaciones corrientes.',
+      'Pueden minorar créditos extraordinarios concedidos durante el ejercicio.',
+      'Pueden incrementar créditos que hayan sido previamente minorados mediante otras transferencias en el mismo ejercicio sin límite.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 52.1 Ley 47/2003 (LGP)',
+    explanation: 'El art. 52.1 LGP prohíbe transferir: a) desde operaciones financieras al resto; b) desde operaciones de capital a operaciones corrientes; c) entre distintas secciones presupuestarias (salvo excepciones como reorganizaciones o programa imprevistos); d) minorar créditos extraordinarios o suplementos/ampliaciones del ejercicio.',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b5-q07',
+    block: 5,
+    topic: 'Competencia en Modificaciones Presupuestarias',
+    question: 'De acuerdo con el artículo 55 de la Ley 47/2003 (LGP), cuando haya de realizarse con cargo al Presupuesto del Estado algún gasto que no pueda demorarse hasta el ejercicio siguiente y no exista crédito adecuado o sea insuficiente, ¿a quién corresponde autorizar créditos extraordinarios o suplementos de crédito para atender obligaciones del ejercicio corriente cuando se financien con baja en el Fondo de Contingencia?',
+    options: [
+      'Al Ministro de Hacienda, en todos los casos.',
+      'Al Consejo de Ministros, a propuesta del Ministro de Hacienda.',
+      'Exclusivamente a las Cortes Generales mediante Ley.',
+      'Al titular del Departamento ministerial afectado.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 55.2.a) Ley 47/2003 (LGP)',
+    explanation: 'Según el art. 55.2 LGP, corresponde al Consejo de Ministros (a propuesta del Ministro de Hacienda) autorizar créditos extraordinarios y suplementos de crédito cuando se financien con baja en el Fondo de Contingencia (si afectan a operaciones no financieras, o si no superan los límites legales; en caso de exigir deuda o superar supuestos del 55.2, se requiere proyecto de ley a las Cortes).',
+    difficulty: 'alto',
+    isTrapWord: true,
+    trapWord: 'en todos los casos',
+  },
+  {
+    id: 'b5-q08',
+    block: 5,
+    topic: 'Gastos Plurianuales',
+    question: 'Conforme al artículo 47.2 de la Ley 47/2003 (LGP), como regla general, el número de ejercicios a que pueden aplicarse los gastos plurianuales no será superior a:',
+    options: [
+      'Tres años.',
+      'Cuatro años, sin que el gasto imputable a cada uno de los ejercicios posteriores supere los porcentajes del 70 %, 60 %, 50 % y 50 % del crédito inicial.',
+      'Cinco años con límite del 80 % en el primero.',
+      'Dos años prorrogables por otro más.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 47.2 Ley 47/2003 (LGP)',
+    explanation: 'Regla del art. 47.2 LGP: máximo 4 ejercicios futuros, con porcentajes máximos sobre el crédito inicial del nivel de vinculación de: 70 % en el ejercicio inmediato siguiente, 60 % en el segundo, y 50 % en el tercero y cuarto (el Consejo de Ministros puede modificar estos límites en casos especialmente justificados).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q09',
+    block: 5,
+    topic: 'Fases de Ejecución del Gasto Público',
+    question: 'En el procedimiento de ejecución del gasto público regulado en el artículo 73 de la Ley 47/2003 (LGP), el acto mediante el cual se acuerda, tras el cumplimiento de los trámites legalmente establecidos, la realización de gastos previamente aprobados por un importe determinado o determinable, con relevancia jurídica frente a terceros, se denomina:',
+    options: [
+      'Aprobación del gasto (Fase A).',
+      'Compromiso de gasto o Disposición (Fase D).',
+      'Reconocimiento de la obligación (Fase O).',
+      'Ordenación del pago (Fase P).'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 73.3 Ley 47/2003 (LGP)',
+    explanation: 'La Fase A (Aprobación) autoriza el gasto con carácter interno; la Fase D (Compromiso o Disposición) vincula jurídicamente a la Administración con un tercero (ej. adjudicación de contrato); la Fase O reconoce la obligación tras acreditar la prestación; la Fase K propone el pago y la Fase P ordena el pago.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q10',
+    block: 5,
+    topic: 'Competencia para Aprobar y Comprometer Gastos',
+    question: 'Según el artículo 74 de la Ley 47/2003 (LGP), ¿a quién corresponde aprobar y comprometer los gastos propios de los servicios a su cargo (salvo los casos reservados por la Ley a la competencia del Gobierno)?',
+    options: [
+      'Al Ministro de Hacienda respecto de todos los Departamentos.',
+      'A los Ministros y a los titulares de los demás órganos del Estado con dotaciones diferenciadas en los Presupuestos Generales del Estado.',
+      'A la Intervención General de la Administración del Estado (IGAE).',
+      'Al Director General del Tesoro y Política Financiera.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 74.1 y 74.2 Ley 47/2003 (LGP)',
+    explanation: 'Los Ministros y titulares de órganos con dotaciones diferenciadas aprueban y comprometen gastos (A y D), reconocen obligaciones (O) e interesan la ordenación del pago (K). La ordenación general de pagos (P) corresponde al Director General del Tesoro y Política Financiera bajo la superior autoridad del Ministro de Economía/Hacienda.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q11',
+    block: 5,
+    topic: 'Documentos Contables',
+    question: '¿Qué documento contable se expide cuando se tramitan de forma acumulada la autorización del gasto, el compromiso del gasto y el reconocimiento de la obligación (como ocurre en nóminas o contratos menores con factura conformada)?',
+    options: [
+      'Documento RC.',
+      'Documento AD.',
+      'Documento ADOK.',
+      'Documento OK.'
+    ],
+    correctIndex: 2,
+    articleRef: 'Orden de 1 de febrero de 1996 (Operatoria contable AGE)',
+    explanation: 'En la contabilidad pública de la AGE, el documento ADOK acumula Aprobación (A), Disposición/Compromiso (D), Reconocimiento de la Obligación (O) y Propuesta de Pago (K). Si no incluye propuesta de pago sería ADO.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q12',
+    block: 5,
+    topic: 'Pagos a Justificar',
+    question: 'De acuerdo con el artículo 79.4 de la Ley 47/2003 (LGP), como regla general, los perceptores de las órdenes de pago a justificar quedan obligados a rendir cuenta justificativa de la aplicación de las cantidades recibidas en el plazo de:',
+    options: [
+      'Un mes.',
+      'Tres meses (y seis meses en pagos en el extranjero).',
+      'Seis meses en todo caso.',
+      'Quince días hábiles desde la recepción de los fondos.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 79.4 Ley 47/2003 (LGP)',
+    explanation: 'Los perceptores de pagos a justificar deben rendir cuenta en el plazo de 3 meses (6 meses si se trata de pagos en el extranjero), ampliables excepcionalmente a 6 y 12 meses respectivamente.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q13',
+    block: 5,
+    topic: 'Anticipos de Caja Fija',
+    question: 'Conforme al artículo 78 de la Ley 47/2003 (LGP) y el RD 725/1989, los anticipos de caja fija son provisiones de fondos de carácter extrapresupuestario y permanente destinadas a:',
+    options: [
+      'Cualquier contrato de obras inferior a 40.000 euros.',
+      'La atención inmediata y posterior aplicación al capítulo de gastos corrientes en bienes y servicios (Capítulo 2) de gastos periódicos o repetitivos (dietas, locomoción, material no inventariable, etc.).',
+      'El pago de retribuciones básicas del Capítulo 1.',
+      'Subvenciones nominativas.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 78.1 Ley 47/2003 (LGP)',
+    explanation: 'Los anticipos de caja fija tienen carácter extrapresupuestario y permanente (con límite general del 7 % del total de créditos del Capítulo 2 en cada Ministerio/organismo) y se aplican a gastos periódicos o repetitivos del Capítulo 2 (si bien excepcionalmente cubre otros conceptos menores autorizados).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q14',
+    block: 5,
+    topic: 'Retribuciones Básicas y Complementarias',
+    question: 'Según los artículos 23 y 24 del TREBEP, ¿cuál de los siguientes conceptos retributivos NO tiene la consideración de retribución básica de los funcionarios de carrera?',
+    options: [
+      'El sueldo asignado a cada Subgrupo o Grupo de clasificación profesional.',
+      'Los trienios, consistentes en una cantidad igual por cada tres años de servicio.',
+      'El complemento de destino correspondiente al nivel del puesto desempeñado.',
+      'Las componentes de sueldo y trienios de las pagas extraordinarias.'
+    ],
+    correctIndex: 2,
+    articleRef: 'Art. 23 y Art. 24 RDL 5/2015 (TREBEP)',
+    explanation: 'Son retribuciones básicas el sueldo y los trienios (así como las pagas extraordinarias en sus componentes básicos según Ley de Presupuestos/AGE). El complemento de destino, complemento específico, productividad y gratificaciones son retribuciones complementarias.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q15',
+    block: 5,
+    topic: 'Control Interno y Externo del Gasto',
+    question: 'De acuerdo con el artículo 140 y siguientes de la Ley 47/2003 (LGP), el control interno de la gestión económico-financiera del sector público estatal se ejerce por:',
+    options: [
+      'El Tribunal de Cuentas.',
+      'La Intervención General de la Administración del Estado (IGAE), mediante la función interventora, el control financiero permanente y la auditoría pública.',
+      'La Comisión Nacional de los Mercados y la Competencia.',
+      'El Banco de España.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 140 y 142 Ley 47/2003 (LGP)',
+    explanation: 'El control EXTERNO corresponde al Tribunal de Cuentas (art. 136 CE). El control INTERNO del sector público estatal corresponde a la IGAE con plena autonomía respecto de las autoridades y entidades cuya gestión controle.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q16',
+    block: 5,
+    topic: 'Prescripción de Derechos y Obligaciones de la Hacienda Pública',
+    question: 'Según el artículo 25 de la Ley 47/2003 (LGP), salvo lo establecido por leyes especiales, prescribirá a los ___ el derecho al reconocimiento o liquidación por la Hacienda Pública estatal de toda obligación que no se hubiese solicitado con presentación de los documentos justificativos:',
+    options: [
+      'Tres años.',
+      'Cuatro años.',
+      'Cinco años.',
+      'Seis años.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 25.1 Ley 47/2003 (LGP)',
+    explanation: 'Tanto los derechos de la Hacienda Pública estatal (art. 15 LGP) como sus obligaciones (art. 25 LGP) prescriben a los CUATRO AÑOS.',
+    difficulty: 'base',
+  },
+  {
+    id: 'b5-q17',
+    block: 5,
+    topic: 'Niveles de Puesto de Trabajo (Subgrupo C1)',
+    question: 'Conforme al artículo 71 del Real Decreto 364/1995, los intervalos de los niveles de puestos de trabajo que corresponden a los funcionarios del Cuerpo General Administrativo (Subgrupo C1) en la Administración General del Estado son:',
+    options: [
+      'Niveles 9 al 18.',
+      'Niveles 11 al 22.',
+      'Niveles 14 al 22.',
+      'Niveles 16 al 26.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 71 Real Decreto 364/1995',
+    explanation: 'Los intervalos de niveles del RD 364/1995 son: A1 (20-30), A2 (16-26), C1 (11-22) y C2 (9-18). Es una pregunta recurrente para opositores de C1.',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q18',
+    block: 5,
+    topic: 'Créditos Ampliables',
+    question: 'Según el artículo 54 de la Ley 47/2003 (LGP), tendrán la condición de ampliables:',
+    options: [
+      'Todos los créditos del Capítulo 2 de gastos corrientes.',
+      'Exclusivamente los destinados al pago de pensiones de Clases Pasivas del Estado, los destinados a atender obligaciones específicas del respectivo ejercicio enumerados en la Ley de Presupuestos y los derivados de deuda pública.',
+      'Únicamente los créditos de inversiones reales financiados con fondos europeos.',
+      'Cualquier crédito que autorice el Subsecretario del Ministerio.'
+    ],
+    correctIndex: 1,
+    articleRef: 'Art. 54.1 Ley 47/2003 (LGP)',
+    explanation: 'Excepcionalmente tienen condición de ampliables los créditos destinados al pago de pensiones de Clases Pasivas, obligaciones específicas enumeradas taxativamente en la LPGE y los destinados a satisfacer obligaciones derivadas de la Deuda del Estado y sus organismos.',
+    difficulty: 'alto',
+  },
+  {
+    id: 'b5-q19',
+    block: 5,
+    topic: 'Generaciones de Crédito',
+    question: 'Conforme al artículo 53 de la Ley 47/2003 (LGP), las generaciones de crédito son modificaciones que incrementan los créditos como consecuencia de:',
+    options: [
+      'La realización de determinados ingresos no previstos o superiores a los contemplados en el presupuesto inicial (como enajenación de inmovilizado, reembolso de préstamos o ingresos por prestación de servicios).',
+      'La minoración obligatoria de créditos de otro Departamento ministerial.',
+      'La incorporación de remanentes del ejercicio cerrado.',
+      'La aplicación automática de la prórroga presupuestaria.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 53.1 y 53.2 Ley 47/2003 (LGP)',
+    explanation: 'Las generaciones de crédito incrementan los créditos presupuestarios cuando se realizan ingresos específicos no previstos o superiores a los inicialmente presupuestados (ej. aportaciones de personas naturales/jurídicas, ventas de bienes o servicios, enajenación de inmovilizado, reintegros de pagos indebidos).',
+    difficulty: 'medio',
+  },
+  {
+    id: 'b5-q20',
+    block: 5,
+    topic: 'Fiscalización Previa Limitada vs Plena',
+    question: 'De acuerdo con el artículo 152 de la Ley 47/2003 (LGP), en el régimen de fiscalización e intervención previa limitada de requisitos básicos:',
+    options: [
+      'La Intervención comprueba exclusivamente la existencia de crédito presupuestario y la competencia del órgano, así como aquellos extremos adicionales fijados por acuerdo del Consejo de Ministros.',
+      'No es necesario comprobar la existencia de crédito adecuado y suficiente.',
+      'Se sustituye íntegramente por auditoría posterior a los cinco años.',
+      'Se aplica únicamente a los contratos menores inferiores a 5.000 euros.'
+    ],
+    correctIndex: 0,
+    articleRef: 'Art. 152.1 Ley 47/2003 (LGP)',
+    explanation: 'En la fiscalización previa limitada (art. 152 LGP), el Consejo de Ministros a propuesta de la IGAE acuerda los extremos esenciales a comprobar: siempre la existencia de crédito presupuestario adecuado y suficiente, que las obligaciones se generan por órgano competente y los extremos adicionales trascendentes fijados en el acuerdo.',
+    difficulty: 'alto',
+  },
+];
