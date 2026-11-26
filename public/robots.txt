@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adminestadoopgame.bastelar.com/sitemap.xml

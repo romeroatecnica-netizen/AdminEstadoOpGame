@@ -1,3 +1,4 @@
+import { CANONICAL_URL } from '../config/seo';
 import { SharedChallenge } from '../types';
 
 export function encodeChallengeToUrl(challenge: SharedChallenge): string {
@@ -8,7 +9,7 @@ export function encodeChallengeToUrl(challenge: SharedChallenge): string {
     binary += String.fromCharCode(b);
   });
   const base64 = btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-  const url = new URL(window.location.href);
+  const url = new URL(CANONICAL_URL);
   url.searchParams.set('reto', base64);
   return url.toString();
 }

@@ -6,6 +6,7 @@ import { RutaDuolingoView } from './components/RutaDuolingoView';
 import { SeoAndMonetizationFooter } from './components/SeoAndMonetizationFooter';
 import { SimulacroInapView } from './components/SimulacroInapView';
 import { TemarioBancoView } from './components/TemarioBancoView';
+import { syncDocumentSeo } from './config/seo';
 import {
   EMBEDDED_CASE_STUDIES,
   EMBEDDED_QUESTIONS,
@@ -54,6 +55,11 @@ export default function App() {
   useEffect(() => {
     saveUserProgress(progress);
   }, [progress]);
+
+  // Synchronize <head> canonical, hreflang, and og:url using CANONICAL_ORIGIN
+  useEffect(() => {
+    syncDocumentSeo(mode);
+  }, [mode]);
 
   // Optional static JSON banks (/data/bloque1.json .. /data/bloque6.json)
   useEffect(() => {
