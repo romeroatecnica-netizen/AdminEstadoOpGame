@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { BookMarked, Calculator, ChevronDown, ExternalLink } from 'lucide-react';
+import { Calculator, ChevronDown } from 'lucide-react';
 import { BLOCK_METADATA, OFFICIAL_CUTOFF_INFO } from '../data/syllabus';
 import { calculateInapScore } from '../engine/scoring';
 import { BlockId } from '../types';
+import { AffiliateMaterialsGrid } from './AffiliateMaterialsGrid';
 
 interface SeoAndMonetizationFooterProps {
   isExamActive: boolean;
@@ -260,77 +261,8 @@ export const SeoAndMonetizationFooter: React.FC<SeoAndMonetizationFooterProps> =
           </div>
         </div>
 
-        {/* Discreet Affiliate / Recommended Study Materials */}
-        <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-              <BookMarked className="h-4 w-4 text-[#1E3A8A]" aria-hidden="true" />
-              <span>Temarios, libros de test y material recomendado C1</span>
-            </div>
-            <span className="text-[11px] text-slate-500">
-              Enlaces de afiliado · Sin coste adicional para ti
-            </span>
-          </div>
-
-          <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3 text-xs">
-            <a
-              href="https://www.boe.es/biblioteca_juridica/index.php?tipo=C"
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
-              className="flex flex-col justify-between rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-4 transition-colors hover:border-[#1E3A8A]/40"
-            >
-              <div>
-                <div className="font-semibold text-slate-900">
-                  Códigos Electrónicos BOE (Legislación Consolidada)
-                </div>
-                <p className="mt-1 text-slate-600">
-                  CE 1978, Ley 39/2015, Ley 40/2015, TREBEP, LGP y LCSP siempre actualizadas.
-                </p>
-              </div>
-              <span className="mt-3 inline-flex items-center gap-1 font-semibold text-[#1E3A8A]">
-                Consultar recurso <ExternalLink className="h-3 w-3" aria-hidden="true" />
-              </span>
-            </a>
-
-            <a
-              href="https://sede.inap.gob.es/cuerpo-general-administrativo-de-la-administracion-del-estado"
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
-              className="flex flex-col justify-between rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-4 transition-colors hover:border-[#1E3A8A]/40"
-            >
-              <div>
-                <div className="font-semibold text-slate-900">
-                  Manuales de Supuestos Prácticos y Exámenes INAP C1
-                </div>
-                <p className="mt-1 text-slate-600">
-                  Recopilación comentada de casos de procedimiento, personal y presupuestos.
-                </p>
-              </div>
-              <span className="mt-3 inline-flex items-center gap-1 font-semibold text-[#1E3A8A]">
-                Ver material C1 <ExternalLink className="h-3 w-3" aria-hidden="true" />
-              </span>
-            </a>
-
-            <a
-              href="https://support.microsoft.com/es-es/excel"
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
-              className="flex flex-col justify-between rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-4 transition-colors hover:border-[#1E3A8A]/40"
-            >
-              <div>
-                <div className="font-semibold text-slate-900">
-                  Guía Oficial Microsoft 365 (Excel, Word y Access)
-                </div>
-                <p className="mt-1 text-slate-600">
-                  Referencia de funciones, atajos y gestión de bases de datos para el Bloque VI.
-                </p>
-              </div>
-              <span className="mt-3 inline-flex items-center gap-1 font-semibold text-[#1E3A8A]">
-                Abrir guía técnica <ExternalLink className="h-3 w-3" aria-hidden="true" />
-              </span>
-            </a>
-          </div>
-        </div>
+        {/* Recommended Study Materials with Product Thumbnails (Amazon.es tag=bastelar-21) */}
+        <AffiliateMaterialsGrid />
       </section>
 
       {/*

@@ -14,6 +14,7 @@ import {
   importJsonIntoCustomBank,
 } from '../engine/questionBank';
 import { BlockId, ExamHistoryEntry, Question } from '../types';
+import { AffiliateMaterialsGrid } from './AffiliateMaterialsGrid';
 
 interface TemarioBancoViewProps {
   allQuestions: Question[];
@@ -139,6 +140,12 @@ export const TemarioBancoView: React.FC<TemarioBancoViewProps> = ({
           );
         })}
       </section>
+
+      {/* Recommended Study Material with Product Thumbnails */}
+      <AffiliateMaterialsGrid
+        heading="Material impreso recomendado para los 6 bloques C1"
+        subheading="Temarios completos, libros de test con penalización, legislación consolidada y soporte de estudio en Amazon.es"
+      />
 
       {/* JSON Importer / Exporter */}
       <section className="rounded-xl border border-[#E2E8F0] bg-white p-6 space-y-4">
